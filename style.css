@@ -9,11 +9,11 @@
 :root {
 
 /*Cores*/
---dark: #590209;
---semidark: #8C0821;
---medium: #D92344;
---semiligth: #D9303E;
---ligth: #8C6C72;  
+--dark: #9b1621;
+--semidark: #c40024;
+--medium: #e9143b;
+--semiligth: #ff7580;
+--ligth: #ffc6d1;  
 
 }
 
@@ -170,20 +170,102 @@ main {
     display: flex;
     flex-direction: row;
     height: 100%;
+    width: 100%;
+    justify-content: space-between;
 }
 
+/*main page*/
+
 .main-page {
+    display: flex;
+    flex-direction: row;
     width: 100%;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    margin: auto;
+}
+
+.criador {
+display: flex;
+flex-direction: column;
+max-width: 280px;
+height: 100%;
+justify-content: space-between;
+margin: 0px 20px;
+}
+
+.criador-img {
+    margin: 0px 0px 20px 0px;
+    max-width: 280px;
+}
+
+.caio {
+    width: 100%;
+}
+
+.auto-list {
+    list-style: none;
+    margin: 20px 0px 0px 0px;
+}
+
+.texto {
+    max-width: 280px;
+    margin: 0px 20px;
+}
+
+
+
+/*sidebar*/
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, var(--ligth), var(--semiligth));
+    max-width: 650px;
+    height: 100%;
     padding: 10px 20px;
 }
 
-.side-bar {
-    background-color: var(--ligth);
-    width: 600px;
-    height: 100%;
-    
+.side-bar > h1 {
+    font-family: 'Rowdies', Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: var(--medium);
+    padding: 5px;
+    border-radius: 10px;
 }
 
+.repo-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.repo-list > a {
+    margin: 10px 0px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--semiligth);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 300ms;
+}
+
+.repo-list > a:hover {
+    transform: scale(1.1);
+}
+
+.br-line {
+    background-color: var(--medium);
+    height: 3px;
+    border-radius: 10px;
+    margin: 15px -10px;
+}
 
 
 
@@ -195,11 +277,10 @@ footer {
     height: 25px;
     align-items: center;
     justify-content: center;
-    justify-self: ;
 }
 
 footer > p {
-    color: white;ee'ee
+    color: white;
 }
 
 footer > p > a {
