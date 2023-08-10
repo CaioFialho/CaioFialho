@@ -174,7 +174,15 @@ main {
     justify-content: space-between;
 }
 
+
+
 /*main page*/
+
+@media (max-width: 820px) {
+    .container {
+        flex-direction: column;
+    }
+}
 
 .main-page {
     display: flex;
