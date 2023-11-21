@@ -10,81 +10,35 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Caio Fialho</h1>
-        </div>
-        <nav class="head-nav">
-            <a href="index.html">HOME</a>
-            <a href="repositorios.html">REPOSITÓRIOS</a>
-            <a href="sobre.html">SOBRE</a>
-            <a href="contato.html">CONTATO</a>
-        </nav>
-        <div class="redes-sociais">
-            <a href="#" target="_blank"><img src="imagens/whatsapp.png" alt="Whatsapp"></a>
-            <a href="https://www.instagram/caiofialho_" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a>
-        </div>
-        <div id="burguer" class="hamburguer" onclick="clickMenu()">
-            <div class="line01"></div>
-            <div class="line02"></div>
-            <div class="line03"></div>
-        </div>
-        <menu id="itens">
-            <a href="index.html">HOME</a>
-            <a href="repositorios.html">REPOSITÓRIOS</a>
-            <a href="sobre.html">SOBRE</a>
-            <a href="contato.html">CONTATO</a>
-            <br>
-            <div class="redes-sociais-menu">
-                <a href="#" target="_blank"><img src="imagens/whatsapp.png" alt="Whatsapp"></a>
-                <a href="https://www.instagram/caiofialho_" target="_blank"><img src="imagens/instagram.png" alt="Instagram"></a>
+        <div class="header_container container">
+            <div class="criador">
+                <div class="foto_icon"></div>
+                <h3>Caio Fialho</h3>
             </div>
-        </menu>
+            <nav class="header_nav">
+                <ul>
+                    <><a href="#main" class="head_nav_item">Home</a></    li>
+                    <li><a href="repositorios.html"     class="head_nav_item">Repositórios</a></li>
+                    <li><a href="sobre.html"    class="head_nav_item">Sobre</a></li>
+                    <li><a href="contato.html"  class="head_nav_item">Contato</a></li>
+                </ul>
+                <div class="head_icons">
+                    <div class="head_icon_div"><img src="images/icones/ instagram (1).png" alt="Instagram"></div>
+                    <div class="head_icon_div"><img src="images/icones/ logotipo-do-github.png" alt="Github"></div>
+                </div>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section class="main-page">
-            <div class="container">
-                <article class="criador">
-                    <picture class="criador-img">
-                        <source media="(max-width: 820px)" srcset="imagens/caio-foto-wide.JPG">
-                        <img src="imagens/caio-foto.JPG" alt="Caio Fialho" class="caio">
-                    </picture>
-                    <div class="auto-list">
-                        <ul>
-                            <li><strong>Nome:</strong> Caio Pereira Fialho</li>
-                            <li><strong>Idade:</strong> 15 anos</li>
-                            <li><strong>Status:</strong> Namorando</li>
-                            <li><strong>Gostos:</strong> Jogos, RPG, Rock/Metal, Vôlei, Programação,    </li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="texto">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eligendi labore eius praesentium soluta laboriosam numquam est blanditiis libero repudiandae culpa, voluptatibus harum debitis laudantium ullam rerum, deserunt obcaecati. Dolores?</p>
-                </article>
-            </div>
-        </section>
-        <aside class="side-bar">
-            <h1>REPOSITÓRIOS</h1>
-            <br>
-            <div class="repo-list">
-                <a href="https://caiofialho.github.io/os-caras/" target="_blank">OS CARAS</a>
-                <a href="https://caiofialho.github.io/JP-Barbearia/" target="_blank">JP BARBEARIA</a>
-            </div>
-            <div class="br-line"></div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus quos consequatur corrupti at cum possimus, quod ut distinctio quasi modi provident tenetur exercitationem aperiam ab architecto officiis sapiente consectetur laborum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ipsum quia ea. Maxime veritatis beatae nemo nam voluptate soluta dolorem mollitia at esse corporis provident sed, debitis eaque, deleniti earum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore non sapiente eveniet doloribus iste nihil consectetur alias soluta! Laudantium deserunt et molestiae inventore, eligendi quam officiis totam accusantium assumenda eos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia facere recusandae minima nam veniam aspernatur officia quasi deleniti saepe ratione veritatis quas, excepturi voluptatem asperiores sint eos perferendis est non!</p>
-        </aside>
+    <main class="container" id="main">
+        <h3>OLA, BEM VINDO AO MEU PORTIFÓLIO</h3>
+        <h1>Eu faço sites.</h1>
+        <p>Sou um <strong>estudante</strong> de <strong>programação</strong> de 16 anos, estou na busca de aprender o suficiente para futuramente me tornar um <strong>freelancer</strong> da área :D</p>
+        <h2>Explore minhas <strong>CRIAÇÕES</strong></h2>
     </main>
-    <footer>
-        <p>Site Criado por <a href="https://github.com/CaioFialho">Caio Fialho</a> para fins de estudo</p>
+    <footer class="container"
+        <p>Site planejado e estruturado por <strong>Caio Fialho</strong></p>
+        <div class="botao_vakinha">Me da dinheiro</div>
+        <div class="carinha"><img src="images/icones/carinha.png" alt="Carinha"></div>
     </footer>
-    <script>
-        function clickMenu() {
-            if (itens.style.display == 'flex') {
-                itens.style.display = 'none'
-            } else {
-                itens.style.display = 'flex'
-            }
-        }
-
-    </script>
 </body>
 </html>
