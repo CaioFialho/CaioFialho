@@ -35,6 +35,10 @@ h1 {
     font-family: var(--stile-font);
 }
 
+a {
+    text-decoration: none;
+}
+
 
 
 /*footer*/
@@ -44,6 +48,16 @@ h1 {
     align-items: center;
     justify-content: space-between;
     height: 10vh;
+}
+
+#footer > p {
+    font-family: var(--poppins);
+}
+
+#footer > p > a > strong:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .footer_container {
@@ -61,6 +75,18 @@ h1 {
     background-color: var(--strong);
     padding: 5px 15px;
     border-radius: 50px;
+    color: white;
+    font-family: var(--red-hat);
+    transition: 0.2s;
+}  
+
+.footer_container > a {
+    text-decoration: none;
+}
+
+.botao_vakinha:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #fb275f71;
 }
 
 .foot_line {
@@ -120,6 +146,11 @@ header {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
+    transition: 0.1s;
+}
+
+.head_nav_item:hover{
+    filter: opacity(80%);
 }
 
 .head_icons {
@@ -131,6 +162,26 @@ header {
     width: 30px;
 }
 
+.head_icon_div {
+    transition: 0.1s;
+}
+
+.head_icon_div:hover {
+    transform: scale(1.1);
+    filter: opacity(80%);
+}
+
+#n_s_s {
+    display: none;
+    font-size: 0.5rem;
+    position: absolute;
+}
+
+@property {
+    #n_s_s {
+        display: flex;
+    }
+}
 
 
 /*main*/
