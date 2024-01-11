@@ -9,44 +9,57 @@
     --background: #151621;
     --background-contraste: #343645;
     --strong: #FB2761;
+
+    --stile-font: 'Ibarra Real Nova', serif;
+    --poppins: 'Poppins', sans-serif;
+    --red-hat: 'Red Hat Display', sans-serif;
 }
 
 body {
     background-color: var(--background);
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--poppins);
 }
 
 strong {
     color: var(--strong);
 }
 
+.container {
+    margin: auto;
+    max-width: 1200px;
+}
 
+h1 {
+    font-family: var(--stile-font);
+}
+
+.foot_line {
+    background-color: var(--background-contraste);
+    height: 2px;
+    width: 100vw;
+}
 
 /*Header*/
 
 header {
     display: flex;
     align-items: center;
-    padding: 3rem;
+    justify-content: center;
+    padding: 3rem 0;
 }
 
 .header_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.container {
-    margin: auto;
-    max-width: 1200px;
-    justify-content: space-between;
+    width: 100%;
 }
 
 .criador {
     display: flex;
     align-items: center;
-    margin: 0px 30px;
+    gap: 10px;
 }
 
 .foto_icon {
@@ -55,4 +68,81 @@ header {
     border-radius: 50%;
     background: var(--background-contraste) url(images/fotos/caio-foto-wide.JPG) center center no-repeat;
     background-size: cover;
+}
+
+.header_nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header_nav  > ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.head_nav_item {
+    color: white;
+    text-decoration: none;
+}
+
+.head_icons {
+    display: flex;
+    gap: 5px;
+}
+
+.head_icon_div > img {
+    width: 30px;
+}
+
+
+
+/*Main*/
+
+h3 {
+    color: var(--strong);
+    font-family: var(--red-hat);
+}
+
+main > h1 {
+    font-size: 6rem;
+}
+
+main > p {
+    font-weight: 300;
+}
+
+main > p > strong {
+    font-weight: 500;
+}
+
+main > h2 
+
+
+/*Footer*/
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.carinha > img {
+    width: 50px;
+    filter: invert();
+}
+
+.botao_vakinha {
+    background-color: var(--strong);
+    padding: 5px 15px;
+    border-radius: 50px;
 }
