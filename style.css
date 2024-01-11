@@ -19,6 +19,7 @@ body {
     background-color: var(--background);
     color: white;
     font-family: var(--poppins);
+    height: 100%;
 }
 
 strong {
@@ -34,19 +35,48 @@ h1 {
     font-family: var(--stile-font);
 }
 
+
+
+/*footer*/
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.footer_container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.carinha > img {
+    width: 50px;
+    filter: invert();
+}
+
+.botao_vakinha {
+    background-color: var(--strong);
+    padding: 5px 15px;
+    border-radius: 50px;
+}
+
 .foot_line {
     background-color: var(--background-contraste);
     height: 2px;
     width: 100vw;
 }
 
-/*Header*/
+
+/*header*/
 
 header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem 0;
+    height: 18vh;
 }
 
 .header_container {
@@ -60,6 +90,10 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.criador > h3 {
+    font-size: 1.2rem;
 }
 
 .foto_icon {
@@ -85,6 +119,7 @@ header {
 .head_nav_item {
     color: white;
     text-decoration: none;
+    font-size: 1.2rem;
 }
 
 .head_icons {
@@ -98,7 +133,14 @@ header {
 
 
 
-/*Main*/
+/*main*/
+
+main {
+    height: 70vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
 
 h3 {
     color: var(--strong);
@@ -111,38 +153,23 @@ main > h1 {
 
 main > p {
     font-weight: 300;
+    font-size: 1.5rem;
 }
 
 main > p > strong {
     font-weight: 500;
 }
 
-main > h2 
-
-
-/*Footer*/
-
-
-
-footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+main > h2 {
+    font-size: 2rem;
+    font-family: var(--red-hat);
+    margin-top: 5rem;
 }
 
-.footer_container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
 
-.carinha > img {
-    width: 50px;
-    filter: invert();
-}
 
-.botao_vakinha {
-    background-color: var(--strong);
-    padding: 5px 15px;
-    border-radius: 50px;
-}
+
+
+
+
+
