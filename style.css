@@ -19,7 +19,10 @@ body {
     background-color: var(--background);
     color: white;
     font-family: var(--poppins);
-    height: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 strong {
@@ -27,8 +30,9 @@ strong {
 }
 
 .container {
-    margin: auto;
+    margin: 0 auto;
     max-width: 1200px;
+    padding: 0 50px;
 }
 
 h1 {
@@ -39,6 +43,19 @@ a {
     text-decoration: none;
 }
 
+p {
+    text-align: justify;
+}
+
+@media (max-width: 1020px) {
+    .head_nav_item {
+        display: none;
+    }
+
+    .head_icon_div {
+        display: none;
+    }
+}
 
 
 /*footer*/
@@ -98,7 +115,7 @@ a {
 
 /*header*/
 
-header {
+#header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,8 +140,8 @@ header {
 }
 
 .foto_icon {
-    height: 30px;
-    width: 30px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
     background: var(--background-contraste) url(images/fotos/caio-foto-wide.JPG) center center no-repeat;
     background-size: cover;
@@ -171,23 +188,31 @@ header {
     filter: opacity(80%);
 }
 
-#n_s_s {
+.menu_button {
+    width: 25px;
+    height: 25px;
     display: none;
-    font-size: 0.5rem;
-    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    transition: 0.1s;
 }
 
-@property {
-    #n_s_s {
-        display: flex;
-    }
+.menu_button:hover {
+    filter: opacity(80%);
+    transform: scale(1.05);
 }
 
+.menu_line {
+    background-color: white;
+    width: 100%;
+    height: 3px;
+}
 
 /*main*/
 
 main {
-    height: 70vh;
+    height: ;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -202,7 +227,7 @@ main > h1 {
     font-size: 6rem;
 }
 
-main > p {
+.homep {
     font-weight: 300;
     font-size: 1.5rem;
 }
@@ -217,10 +242,27 @@ main > h2 {
     margin-top: 5rem;
 }
 
+.titulos {
+    font-size: 4.6rem;
+}
+
+.pagina {
+    align-items: center;
+}
+
+main > p {
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+main > p > strong {
+    font-family: var(--red-hat);
+}
 
 
 
+/*Repositórios*/
 
-
-
-
+.repo_container {
+    
+}
