@@ -263,6 +263,62 @@ main > p > strong {
 
 /*Repositórios*/
 
+#repositorios {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#os_caras_repo > .repo_visivel {
+    background-image: url(images/repositorios/os_caras.jpg);
+}
+
 .repo_container {
-    
+    width: 240px;
+    margin: 10 20;
+}
+
+.repo_visivel {
+    width: 240px;
+    height: 320px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.2rem;
+    transition: 1s;
+    color: white;
+}
+
+.repo_hover {
+    position: absolute;
+    bottom: 0rem;
+    background-color: #151621e7;
+    display: flex;
+    transition: 0.3s;
+    opacity: 0%;
+}
+
+.repo_visivel:hover .repo_hover {
+    opacity: 100%;
+}
+
+.repo_especificacao {
+    padding: 0 10px;
+    width: 220px;
+    padding: 10px;
+}
+
+.repo_especificacao > h3 {
+    font-size: 2.2rem;
+}
+
+.repo_especificacao > p {
+    text-align: justify;
 }
