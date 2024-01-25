@@ -410,3 +410,38 @@ main > p > strong {
 #lista_sobre > p {
     font-weight: 100;
 }
+
+
+
+
+/*Contato*/
+
+.contato {
+    display: flex;
+    flex-direction: row;
+}
+
+#contatos {
+    display: flex;
+    flex-direction: column;
+}
+
+.redes {
+    display: flex;
+}
+
+.sociais {
+
+}
+
+.linha_ctt {
+
+}
+
+#vakinha {
+
+}
+
+.vakinha {
+
+}
