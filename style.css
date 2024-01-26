@@ -9,7 +9,7 @@
     --background: #151621;
     --background-contraste: #343645;
     --strong: #FB2761;
-    --contraste-medio: #3a3c47;
+    --contraste-medio: #363958;
     --contraste-fraco: #666775;
     --claro: #bdbecc;
 
@@ -419,29 +419,198 @@ main > p > strong {
 .contato {
     display: flex;
     flex-direction: row;
+    gap: 100px;
+    margin-bottom: 20px;
 }
 
 #contatos {
     display: flex;
     flex-direction: column;
+    width: 550px;
+    justify-content: space-between;
 }
 
 .redes {
     display: flex;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+#redes_sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#redes_sociais > h2 {
+    font-family: var(--stile-font);
+    font-size: 2rem;
 }
 
 .sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.sociais > a > img {
+    width: 40px;
+}
+
+.nome {
+    font-family: var(--red-hat);
+    color: var(--strong);
+}
+
+.nick {
+    font-family: var(--stile-font);
 }
 
 .linha_ctt {
-
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin: 30px 0;
 }
 
-#vakinha {
+#vakinha > h2 {
+    font-family: var(--stile-font);
+    font-size: 3rem;
+}
 
+#vakinha > p {
+    font-size: 1.3rem;
 }
 
 .vakinha {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
 
+.vakinha > p {
+    font-family: var(--stile-font);
+    font-size: 1.3rem;
+}
+
+#botao_vakinha {
+    font-size: 2rem;
+    font-family: var(--red-hat);
+    padding: 10px 30px;
+    margin-right: 20px;
+}
+
+#feedback {
+    width: 550px;
+}
+
+#feedback > h1 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_nome {
+    display: flex;
+    background-color: var(--contraste-medio);
+    border-radius: 2rem;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+}
+
+.form_nome > input {
+    border: none;
+    background-color: var(--contraste-medio);
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 0 2rem 2rem 0;
+    width: 410px;
+    color: white;
+}
+
+.nome_lb {
+    background-color: #20233F;
+    border-radius:  2rem 0 0 2rem;
+    font-size: 20px;
+    padding: 17px;
+    width: 110px;
+    font-weight: bold;
+    font-family: var(--red-hat);
+}
+
+.form_txt {
+    background-color: var(--contraste-medio);
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+}
+
+.txt_lb {
+    background-color: #20233F;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 2rem 2rem 0 0;
+    font-weight: bold;
+    font-family: var(--red-hat);
+}
+
+.form_txt > textarea {
+    background-color: var(--contraste-medio);
+    border: none;
+    border-radius: 0 0 2rem 2rem;
+    height: 170px;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.send_button {
+    border: none;
+    background-color: #20233F;
+    color: white;
+    width: 150px;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-family: var(--red-hat);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.send_button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 3px #dcdde742;
+}
+
+
+
+/*OBRIGADO*/
+
+#obrigado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#obrigado > a {
+    background-color: var(--strong);
+    padding: 10px 25px;
+    border-radius: 50px;
+    color: white;
+    font-family: var(--red-hat);
+    transition: 0.2s;
+    font-size: 3rem;
+    margin: 30px;
+}
+
+#obrigado > a:hover {
+    transform: scale(1.1);
 }
