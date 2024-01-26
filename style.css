@@ -26,6 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow-x: hidden;
 }
 
 strong {
@@ -50,13 +51,17 @@ p {
     text-align: justify;
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 800px) {
     .head_nav_item {
         display: none;
     }
 
     .head_icon_div {
         display: none;
+    }
+
+    #burguer {
+        display: flex;
     }
 }
 
@@ -89,6 +94,7 @@ p {
 .carinha > img {
     width: 50px;
     filter: invert();
+    z-index: 1;
 }
 
 .botao_vakinha {
@@ -173,7 +179,7 @@ p {
     filter: opacity(80%);
 }
 
-.head_icons {
+.head_icons, .menu_icons{
     display: flex;
     gap: 5px;
 }
@@ -197,8 +203,10 @@ p {
     display: none;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 7px;
     transition: 0.1s;
+    z-index: 1000;
+    cursor: pointer;
 }
 
 .menu_button:hover {
@@ -210,6 +218,99 @@ p {
     background-color: white;
     width: 100%;
     height: 3px;
+}
+
+#itens {
+    display: none;
+}
+
+.menu_cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    position: absolute;
+    background-color: var(--background);
+    height: 100vh;
+    width: 100vw;
+    bottom: -0vh;
+    z-index: 10;
+}
+
+.menu_cell > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    z-index: 20;
+    height: 300px;
+    width: 100vw;
+}
+
+.menu_cell > ul > li > a {
+    color: white;
+    font-family: var(--red-hat);
+    font-size: 30px;
+    padding: 30px 150px;
+}
+
+.menu_cell > ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu_icons {
+    margin-top: 120px;
+    margin-bottom: 10px;
+}
+
+.menu_icon_div > img {
+    width: 50px;
+}
+
+#item_01{
+    background-color: #20233F;
+}
+
+#item_02{
+    background-color: #292D4D;
+}
+
+#item_03{
+    background-color: #35385A;
+}
+
+#item_04{
+    background-color: #43476B;
+}
+
+.close {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    z-index: 400;
+    align-self: flex-end;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.close_line {
+    background-color: white;
+    height: 5px;
+    width: 20px;
+    position: relative;
+}
+
+#close_01 {
+    transform: rotate(45deg);
+    left: 20px;
+}
+
+#close_02 {
+    transform: rotate(-45deg);
 }
 
 /*main*/
@@ -269,6 +370,7 @@ main > p > strong {
 
     main > h1 {
         font-size: 3.2rem;
+        margin-bottom: 20px;
     }
 
     h3 {
@@ -294,9 +396,17 @@ main > p > strong {
     }
 
     #footer > p {
-        font-size: 0.8rem;
-        width: 210px;
+        font-size: 0.7rem;
+        width: 180px;
         text-align: justify;
+    }
+
+    .titulos {
+        font-size: 3rem;
+    }
+
+    main > p {
+        font-size: 1.5rem;
     }
 }
 
@@ -410,7 +520,29 @@ main > p > strong {
     text-align: justify;
 }
 
+@media (max-width: 700px) {
+    .repo_container {
+        width: 150px;
+    }
 
+    .repo_visivel {
+        width: 180px;
+        height: 240px;
+    }
+
+    .repo_especificacao {
+        width: 160px;
+        paddin: 20px;
+    }
+
+    .repo_especificacao > h3 {
+        font-size: 2rem;
+    }
+
+    .repo_especificacao > p {
+        font-size: 0.8rem;
+    }
+}
 
 /*Sobre*/
 
@@ -447,6 +579,31 @@ main > p > strong {
 
 #lista_sobre > p {
     font-weight: 100;
+}
+
+@media (max-width: 1200px) {
+    #int_sobre {
+        flex-direction: column;
+        align-items: center;
+        width: 80vw;
+    }
+
+    #int_sobre > img {
+        width: 80vw;
+    }
+
+    .int_text > p {
+        font-size: 1.4rem;
+    }
+
+    .int_text {
+        margin-top: 30px;
+        width: 80vw;
+    }
+
+    #lista_sobre {
+        width: 70vw;
+    }
 }
 
 
@@ -627,7 +784,19 @@ main > p > strong {
     box-shadow: 0 0 20px 3px #dcdde742;
 }
 
+@media (max-width: 1200px) {
+    .contato {
+        flex-direction: column;
+    }
 
+    #vakinha > p {
+        margin-top: 60px;
+    }
+
+    #obrigado > p {
+        margin: 0 30px;
+    }
+}
 
 /*OBRIGADO*/
 

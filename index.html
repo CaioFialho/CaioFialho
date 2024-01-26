@@ -31,12 +31,28 @@
                 </nav>
             </div>
             <menu>
-                    <div class="menu_button">
-                        <div class="menu_line"></div>
-                        <div class="menu_line"></div>
-                        <div class="menu_line"></div>
-                    </div>   
-                </menu>
+                <div class="menu_button" id="burguer" onclick="clickMenu()">
+                    <div class="menu_line"></div>
+                    <div class="menu_line"></div>
+                    <div class="menu_line"></div>
+                </div>  
+            </menu>
+            <nav class="menu_cell" id="itens" onclick="closeMenu()">
+                <div class="close">
+                    <div class="close_line" id="close_01"></div>
+                    <div class="close_line" id="close_02"></div>
+                </div>
+                <ul>
+                    <li id="item_01"><a href="index.html" class="menu_item" >Home</a></li>
+                    <li id="item_02"><a href="repositorios.html" class="menu_item" >Repositórios</a></li>
+                    <li id="item_03"><a href="sobre.html" class="menu_item" >Sobre</a></li>
+                    <li id="item_04"><a href="contato.html" class="menu_item" >Contato</a></li>
+                </ul>
+                <div class="menu_icons">
+                    <a href="https://www.instagram.com/ caiofialho_/"><div   class="menu_icon_div"><img src="images/icones/instagram (1).png" alt="Instagram"></div></a>
+                    <a href="https://github.com/    CaioFialho"><div    class="menu_icon_div"><img src="images/icones/logotipo-do-github.png" alt="Github"></div></a>
+                </div>
+            </nav>
         </div>
     </header>
     <main class="container" id="main">
@@ -55,5 +71,6 @@
             </div>
     </div>
     </footer>
+    <script src="hamburguer.js"></script>
 </body>
 </html>
