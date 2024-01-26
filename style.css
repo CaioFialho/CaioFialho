@@ -26,7 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow-x: hidden;
+    overflow-x: hidde;
 }
 
 strong {
@@ -526,12 +526,12 @@ main > p > strong {
     }
 
     .repo_visivel {
-        width: 180px;
-        height: 240px;
+        width: 160px;
+        height: 210px;
     }
 
     .repo_especificacao {
-        width: 160px;
+        width: 140px;
         paddin: 20px;
     }
 
@@ -541,6 +541,21 @@ main > p > strong {
 
     .repo_especificacao > p {
         font-size: 0.8rem;
+    }
+
+    #mais_simbolo {
+        width: 70px;
+        height: 70px;
+    }
+
+    #m_linha_1 {
+        width: 10px;
+        height: 50px;
+    }
+    
+    #m_linha_2 {
+        width: 50px;
+        height: 10px;
     }
 }
 
@@ -713,7 +728,6 @@ main > p > strong {
     display: flex;
     background-color: var(--contraste-medio);
     border-radius: 2rem;
-    width: 100%;
     height: 60px;
     align-items: center;
 }
@@ -726,6 +740,7 @@ main > p > strong {
     border-radius: 0 2rem 2rem 0;
     width: 410px;
     color: white;
+    min-width: none;
 }
 
 .nome_lb {
@@ -734,6 +749,7 @@ main > p > strong {
     font-size: 20px;
     padding: 17px;
     width: 110px;
+    min-width: 100px;
     font-weight: bold;
     font-family: var(--red-hat);
 }
@@ -787,6 +803,16 @@ main > p > strong {
 @media (max-width: 1200px) {
     .contato {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .linha_ctt {
+        width: 80vw;
+    }
+
+    #contatos {
+        width: 90vw;
+        align-items: center;
     }
 
     #vakinha > p {
@@ -795,6 +821,22 @@ main > p > strong {
 
     #obrigado > p {
         margin: 0 30px;
+    }
+
+    #redes_sociais {
+
+    }
+
+    #feedback {
+        width: 90vw;
+    }
+
+    .form_nome, .form_txt{
+        width: 85vw;
+    }
+
+    .nome_lb {
+        padding-righ;
     }
 }
 
