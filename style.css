@@ -47,6 +47,8 @@ p {
     text-align: justify;
 }
 
+
+
 @media (max-width: 800px) {
     .head_nav_item {
         display: none;
@@ -79,6 +81,10 @@ p {
     color: white;
     text-decoration: underline;
     cursor: pointer;
+}
+
+#footer > p > a {
+    text-decoration: none;
 }
 
 .footer_container {
@@ -346,6 +352,10 @@ main > h2 {
     margin-top: 5rem;
 }
 
+main > h2 > a {
+    text-decoration: none;
+}
+
 .titulos {
     font-size: 4.5rem;
 }
@@ -415,6 +425,11 @@ main > p > a {
 
     main > p > a > strong {
         text-decoration: underline;
+        color: var(--strong);
+    }
+
+    main > p > a {
+        color: ;
     }
 }
 
@@ -626,6 +641,10 @@ main > p > a {
 
     #lista_sobre {
         width: 70vw;
+    }
+
+    #lista_sobre > p > a > strong {
+        text-decoration: underline;
     }
 }
 
@@ -845,6 +864,10 @@ main > p > a {
 
     .nome_lb {
         padding-righ;
+    }
+
+    .vakinha > a {
+        text-decoration: none;
     }
 }
 
