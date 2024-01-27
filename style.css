@@ -43,10 +43,6 @@ h1 {
     font-family: var(--stile-font);
 }
 
-a {
-    text-decoration: none;
-}
-
 p {
     text-align: justify;
 }
@@ -144,9 +140,12 @@ p {
     gap: 10px;
 }
 
-.criador > h3 {
+.criador > a > h3, .criador > a {
     font-size: 1.2rem;
+    text-decoration: none;
 }
+
+
 
 .foto_icon {
     height: 45px;
@@ -253,6 +252,7 @@ p {
     font-family: var(--red-hat);
     font-size: 30px;
     padding: 30px 150px;
+    text-decoration: none;
 }
 
 .menu_cell > ul > li {
@@ -359,8 +359,12 @@ main > p {
     font-size: 2rem;
 }
 
-main > p > strong {
+main > p > strong, main > p > a > strong {
     font-family: var(--red-hat);
+}
+
+main > p > a {
+    text-decoration: none;
 }
 
 @media (max-width: 800px) {
@@ -407,6 +411,10 @@ main > p > strong {
 
     main > p {
         font-size: 1.5rem;
+    }
+
+    main > p > a > strong {
+        text-decoration: underline;
     }
 }
 
