@@ -553,16 +553,16 @@ main > p > a > strong:hover {
     }
 
     .repo_container {
-        width: 150px;
+        width: 110px;
     }
 
     .repo_visivel {
-        width: 160px;
-        height: 210px;
+        width: 150px;
+        height: 200px;
     }
 
     .repo_especificacao {
-        width: 140px;
+        width: 130px;
         paddin: 20px;
     }
 
