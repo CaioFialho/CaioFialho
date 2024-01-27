@@ -27,7 +27,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow-x: hidde;
 }
 
 strong {
@@ -378,6 +377,10 @@ main > p > a {
     text-decoration: none;
 }
 
+main > p > a > strong:hover {
+    color: white;
+}
+
 @media (max-width: 800px) {
     .container {
         padding: 0 30px;
@@ -624,6 +627,10 @@ main > p > a {
     font-weight: 100;
 }
 
+#lista_sobre > p > a > strong:hover {
+    color: white;
+}
+
 @media (max-width: 1200px) {
     #int_sobre {
         flex-direction: column;
@@ -849,6 +856,10 @@ main > p > a {
 
     #vakinha > p {
         margin-top: 60px;
+    }
+
+    #vakinha > h2 {
+        font-size: 2.6rem;
     }
 
     #obrigado > p {
