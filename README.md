@@ -1,7 +1,20 @@
-Oi, eu sou o Caio! Eu sou um estudante do ensino-médio e estou na busca de me tornar um dev.
+👋 Opa! Eu sou o Caio.
 
-Atualmete estou estudando conceitos básicos como HTML5, CSS3 e JavaScrit.
+Sou estudante de Análise e Desenvolvimento de Sistemas e atuo como desenvolvedor em formação, com foco em desenvolvimento web e sistemas.
 
-A maioria dos repositórios do meu github são destinados a estudo, um ou outro sendo um projeto pessoal, porém ainda deixarei a maioria pública para maior versatilidade nos meus estudos coletivos com colegas que também estão estudando programação, porém sintasse a vontade para ver os projetos, comentar e criticar o quanto quiser, toda ajuda é especial C:
+Tenho experiência e estudos em:
+- JavaScript (lógica, APIs, Node.js)
+- SQL e modelagem de banco de dados
+- C# e .NET (em aprendizado contínuo)
+- HTML5 e CSS3
 
-Para maior acesso a informações e repositório acesse [CAIO FIALHO](https://caiofialho.github.io/CaioFialho)
+Este GitHub é, em grande parte, um espaço de estudo prático e evolução constante. Aqui você vai encontrar:
+- Projetos de aprendizado
+- Experimentos técnicos
+- Protótipos de ideias reais
+- Alguns projetos pessoais em desenvolvimento
+
+A maioria dos repositórios permanece pública justamente para facilitar troca de conhecimento, colaboração e feedback.  
+Fique à vontade para explorar, comentar, criticar ou sugerir melhorias — aprendizado bom é aprendizado compartilhado.
+
+🚀 Em constante evolução.
