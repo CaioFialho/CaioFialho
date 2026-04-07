@@ -293,6 +293,20 @@ p {
     background-color: #43476B;
 }
 
+#item_01:hover,
+#item_02:hover,
+#item_03:hover,
+#item_04:hover {
+    background-color: #ffffff;
+}
+
+#item_01:hover a,
+#item_02:hover a,
+#item_03:hover a,
+#item_04:hover a {
+    color: var(--background);
+}
+
 .close {
     display: flex;
     width: 40px;
@@ -301,6 +315,12 @@ p {
     align-self: flex-end;
     margin-bottom: 40px;
     margin-right: 20px;
+    transition: 100ms;
+    cursor: pointer;
+}
+
+.close:hover {
+    transform: scale(1.1);
 }
 
 .close_line {
